@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --bg: #f5f6ff;
+  --surface: #ffffff;
+  --surface-2: #f8fbff;
+  --line: #d8def5;
+  --line-strong: #a9b5e8;
+  --text-main: #17233c;
+  --text-muted: #55617d;
+  --text-accent: #d94e27;
+  --font-body: 'Outfit', 'Trebuchet MS', sans-serif;
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 8% 12%, rgba(255, 111, 60, 0.16), transparent 22%),
+    radial-gradient(circle at 88% 84%, rgba(21, 168, 160, 0.14), transparent 24%),
+    linear-gradient(160deg, #f4f7ff 0%, #eef4ff 45%, #edf9ff 100%);
+}
+
+#root {
+  min-height: 100svh;
+  width: min(1160px, 100%);
+  margin: 0 auto;
+  background: color-mix(in srgb, var(--surface) 93%, transparent);
+  border-inline: 1px solid var(--line);
+}
